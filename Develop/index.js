@@ -12,68 +12,71 @@ inquirer.prompt = ([
     {
         type: 'Input',
         name: 'title',
-        message: 'What is the current title of your Repository?',
+        message: 'What is your Gihub Username?',
 
     },
 
     // What is yor email address?
     {
-        type: '',
-        name: '',
-        message: '',
+        type: 'Input',
+        name: 'email',
+        message: 'What is your email address?',
 
     },
 
     //What is your project's name? 
     {
-        type: '',
-        name: '',
-        message: '',
+        type: 'Input',
+        name: 'title',
+        message: 'What is the title of your project?',
 
     },
 
     // Write a short description of your project 
     {
-        type: '',
-        name: '',
-        message: '',
+        type: 'Input',
+        name: 'description',
+        message: 'Please enter a description of your project? ',
 
     },
 
     //What kind of license should your project have ?
     {
-        type: '',
-        name: '',
-        message: '',
-
+        type: 'checkbox',
+        name: 'license',
+        message: 'What kind of license should your project have? ',
+        choices: ['GNU AGPLv3', 'GNU GPLv3',
+            'GNU LGPLv3', 'Mozilla Public License 2.0',
+            'Apache License 2.0', 'MIT License', 'Boost Software License 1.0',
+            'The Unlicense'],
     },
 
     //What command should be run to install dependencies? 
     {
-        type: '',
-        name: '',
-        message: '',
+        type: 'Input',
+        name: 'installation',
+        message: 'How do you install your project?',
     },
 
     // What commmand should be run to run tests? 
     {
-        type: '',
-        name: '',
-        message: '',
+        type: 'Input',
+        name: 'testing',
+        message: 'How do you test this project?',
     },
 
     // what does the user need to know about using the repo? 
     {
-        type: '',
-        name: '',
-        message: '',
+        type: 'Input',
+        name: 'usage',
+        message: 'What does the user need to know about this project? ',
     },
 
     //What does the user need to know about contributing to the repo? 
     {
-        type: '',
-        name: '',
-        message: '',
+        type: 'Input',
+        name: 'contribution',
+        message: 'Do your have any contribution guidelines? ',
     },
 
 
