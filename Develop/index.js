@@ -7,63 +7,75 @@ const util = require('util'); //util package
 
 // TODO: Create an array of questions for user input
 inquirer.prompt = ([
+
+    //What is your github username?
     {
         type: 'Input',
         name: 'title',
         message: 'What is the current title of your Repository?',
 
     },
+
+    // What is yor email address?
     {
         type: '',
         name: '',
         message: '',
 
     },
+
+    //What is your project's name? 
     {
         type: '',
         name: '',
         message: '',
 
     },
+
+    // Write a short description of your project 
     {
         type: '',
         name: '',
         message: '',
 
     },
+
+    //What kind of license should your project have ?
     {
         type: '',
         name: '',
         message: '',
 
     },
+
+    //What command should be run to install dependencies? 
     {
         type: '',
         name: '',
         message: '',
     },
 
+    // What commmand should be run to run tests? 
     {
         type: '',
         name: '',
         message: '',
     },
 
+    // what does the user need to know about using the repo? 
     {
         type: '',
         name: '',
         message: '',
     },
+
+    //What does the user need to know about contributing to the repo? 
     {
         type: '',
         name: '',
         message: '',
     },
-    {
-        type: '',
-        name: '',
-        message: '',
-    },
+
 
     //     //create a validation if and else for user input 
     //     validate: nameEntry => {
