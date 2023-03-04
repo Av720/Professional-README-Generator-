@@ -4,7 +4,7 @@ const inquirer = require('inquirer');// inquirer package
 const fs = require('fs')// fs package 
 const generateMarkdown = require('./utils/generateMarkdown'); // generateMarkdown Package 
 const util = require('util'); //util package 
-const { generatePrime } = require('crypto');
+
 
 
 
