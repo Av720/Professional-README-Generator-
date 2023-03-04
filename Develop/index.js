@@ -14,7 +14,7 @@ const questions = [
         //What is your github username?
         {
             type: 'Input',
-            name: 'title',
+            name: 'username',
             message: 'What is your Gihub Username?',
 
         },
@@ -48,12 +48,15 @@ const questions = [
             type: 'checkbox',
             name: 'license',
             message: 'What kind of license should your project have? ',
-            choices: ['GNU AGPLv3', 'GNU GPLv3',
-                'GNU LGPLv3', 'Mozilla Public License 2.0',
-                'Apache License 2.0', 'MIT License', 'Boost Software License 1.0',
-                'The Unlicense'],
+        choices: [{ value: 'Apache' },   //Apache 2.0 License
+            { value: 'BSD3' },  //BSD 3-Clause License
+    { value: 'LGPL' },  //GNU LGPL v3
+    { value: 'MIT' },  //The MIT License
+    { value: 'MPL' }, //Mozilla Public License 2.0
+                { value: 'None' }, 
+        ]
         },
-
+    
         //What command should be run to install dependencies? 
         {
             type: 'Input',
