@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer');// inquirer package
 const fs = require('fs')// fs package 
-const generateMarkdown = require('./utils/generateMarkdown'); // generateMarkdown Package 
+const generateMarkdown = require('./utils/generateMarkdown'); // 
 const util = require('util'); //util package 
 
 
@@ -45,16 +45,10 @@ const questions = [
 
         //What kind of license should your project have ?
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'What kind of license should your project have? ',
-        choices: [{ value: 'Apache' },   //Apache 2.0 License
-            { value: 'BSD3' },  //BSD 3-Clause License
-    { value: 'LGPL' },  //GNU LGPL v3
-    { value: 'MIT' },  //The MIT License
-    { value: 'MPL' }, //Mozilla Public License 2.0
-                { value: 'None' }, 
-        ]
+            choices: ['Apache', 'MIT', 'GPL 3.0', 'BSD 3', 'None'],
         },
     
         //What command should be run to install dependencies? 
@@ -68,7 +62,7 @@ const questions = [
         {
             type: 'Input',
             name: 'testing',
-            message: 'How do you test this project?',
+            message: 'How do you test this project? (npm test)',
         },
 
         // what does the user need to know about using the repo? 
