@@ -26,6 +26,12 @@ function renderLicenseSection(license) {
   return ``;
 }
 
+function renderTesting(testing) {
+  if (testing !== "none") {
+
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -43,7 +49,7 @@ ${data.description}
 - [Installation](#installation)
 - [Usage](#usage)
 ${renderLicenseLink(data.license)}
-- [Test](#test)
+- [Testing](#testing)
 - [Questions](#questions)
 - [Contribution](#contribution)
 
@@ -54,6 +60,11 @@ ${data.installation}
 ${data.usage}
 
 ${renderLicenseSection(data.license)}
+
+## Testing
+To run tests, run the following command:
+
+${data.testing}
 
 ## Contribution 
 ${data.contribution}
